@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <h1>프로그래밍 교육</h1>
+    <a href="#python"> 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" height="50" width="50" alt="">
+        <!-- 속성들의 순서는 크게 중요하지 않다. -->
+    </a>
+    <!-- href 는  id 값 (#이 id를 뜻한다) 을 가질 수도 있다. -->
+    <a href="#web">
+        <img src="images/img_web.png" height="50" width="50"  alt="">
+    </a>
+    <a href="intro.html">참고사이트</a>
+    <hr>
+    <a href="https://docs.python.org/ko/3/tutorial/index.html" target="_blank"><h2 id="pyhton">파이썬</h2></a>
+    
+
+    <h3>Number type</h3>
+    <p>파이썬에서 숫자형은 아래와 같이 있다.</p>
+    <ol>
+        <li>int</li>
+        <li>float</li>
+        <li>complex</li>
+        <li><STRIKE>str</STRIKE></li>
+        <!-- <li><del>str</del></li>  -->
+    </ol>
+    
+    <h3>Sequence</h3>
+    <p>파이썬에서 시퀀스는 아래와 같이 있다.</p>
+    <p><b>시퀀스는 for문을 돌릴 수 있다!!</b></p>
+    <ol>
+        <li>str</li>
+        <li>list</li>
+        <li>tuple</li>
+        <li>range</li>
+    </ol>
+    <hr>
+    <a href="https://developer.mozilla.org/ko/" target="_self"><h2 id="web">웹</h2></a>
+    <!-- self가 default 값 -->
+    <h3>기초</h3>
+    <ul>
+        <li style="list-style: circle">HTML</li>
+        <li style="list-style: circle">CSS</li>
+    </ul>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pSkZvBkoE9c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><br><br>
+    <!-- 
+        td : table data
+        th : table head 
+        tr : table row
+        좌 > 우 , 위 > 아래로 진행
+     -->
+    <!-- <table>
+        <tr>
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+        </tr>
+        <tr>
+            <td>A코스</td>
+            <th rowspan = "2">짬뽕</th>
+            <th colspan = "2" align="left">초밥</th>
+        </tr>
+        <tr>
+            <td>B코스</td>
+            <th>김치찌개</th>
+            <th>삼계탕</th> 
+        </tr>-->
+
+    <!-- 테이블 만들기 선생님 코드  -->
+        
+    <table>
+        <thead>
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td> A코스 </td>
+                <td rowspan = "2"> 짬뽕 </td>
+                <td colspan = "2"> 초밥 </td>
+                <!-- colsapn rowspan 을 사용하면 칸수가 밀린다. -->
+            </tr>
+            <tr>
+                <td> B코스 </td>
+                <td> 김치찌개 </td>
+                <td> 삼계탕 </td>
+            </tr>
+        </tbody>
+
+    </table>
+    <br><br><br>
+
+    <table>
+        <thead>
+            <th>TIME</th>
+            <th>INDOOR</th>
+            <th colspan ="2">OUTDOOR</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th></th>
+                <th style="border: 2px solid royalblue">소극장</th>
+                <th style="border: 2px solid royalblue">잔디마당</th>
+                <th style="border: 2px solid royalblue">대공연장</th>
+            </tr>    
+            <tr>
+                <td>10:00</td>
+                <td rowspan="2">안녕하신가영</td>
+                <td></td>
+                <td>10CM</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td rowspan = "2">선우정아</td>
+                <td rowspan = "2">참깨와 솜사탕</td>
+            </tr>
+            <tr>
+                <td>15:00</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>17L00</td>
+                <td>크러쉬</td>
+                <td></td>
+                <td>폴킴</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+

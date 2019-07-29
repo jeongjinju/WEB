@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>서브웨이 주문하기</h1>
+    <p>주문서를 작성해주세요.</p>
+
+    <form action="">
+        <!-- 이름: <input type="text">
+        마크업이 되어있지 않다. 
+        어떤 input인지 설명 -->
+        <label for="name">이름 :</label>
+        <!-- 라벨과 인풋을 연결.  -->
+        <input id="name" type="text" name="name">
+    
+        <label for="date">날짜:</label>
+        <input id="date" type="date" name="date">
+
+        <h3>1. 샌드위치 선택</h3>
+        
+        <input id="option1" type="radio" name="main" value="1"> <label for="option1"> 에그마요 </label><br>
+        <input id="option2" type="radio" name="main" value="2"> <label for="option2"> 이탈리안 비엠티 </label><br>
+        <input id="option3" type="radio" name="main" value="3"> <label for="option3"> 터키 </label><br>
+        
+        <hr>
+        
+        <!-- 
+            check box : 여러 개 중에 여러 개 선택
+            radio     : 여러 개 중에 하나만 선택
+            3가지 중에 하나만 선택하게 하기 위함 > name : 이름을 설정
+         -->
+
+
+        <h3>2. 사이즈선택</h3>
+        <input type="number" >
+        <br>
+        <hr>
+
+        <h3>3. 빵</h3>
+        <select name ="bread">
+           <option value = "허니오트">허니오트</option>
+           <option value = "플랫브래드">플랫브래드</option>
+           <option value = "하티 이탈리안">하티 이탈리안</option>
+        </select>
+        <hr>
+
+        <h3>4.야채/소스</h3>
+        <input type="checkbox" id="tomato" name="add" value="1"><label for="tomato"> 토마토 </label> <br>
+        <input type="checkbox" id="cucumber" name="add" value="2"> <label for="cucumber">오이 </label><br>
+        <input type="checkbox" id="hala" name="add" value="3"><label for="hala"> 할라피뇨</label><br>
+        <input type="checkbox" id="hot" name="add" value="4"><label for="hot"> 핫 칠리</label><br>
+        <input type="checkbox" id="barbecue" name="add" value="5"><label for="barbecue"> 바베큐</label><br>
+        <br><br><br>
+        <input type="submit" >
+    </form>
+
+
+
+</body>
+</html>
