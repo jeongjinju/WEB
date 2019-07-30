@@ -1,0 +1,59 @@
+div {
+    height: 100px;
+    width: 100px;
+} 
+
+.blue{
+    background-color: dodgerblue;
+    position: static;
+    /* 기본 값이라서 적나 안 적나 똑같은 결과 */
+}
+
+.red {
+    background-color: red;
+    position: relative;
+    /* 원래 위치에 대해 상대적인 위치 */
+    left: 50px;
+    bottom: 50px;
+}
+
+/* red가 움직였지만 레드의 현재 위치에 상관없이
+원래 위치에 있다고 생각하여 레드의 원래 위치 밑에 박스가 생성된다. */
+.green {
+    background-color: forestgreen;
+    position: absolute;
+    /* left: 25px;
+    top: 25px; */
+    /* 시작점을 기준으로 움직였다. */
+    /* 절대위치, 부모요소 또는 가장 가까운 조사 위치를 통해 움직인다. 
+    여기에선 부모요소가 <body>이다. */
+
+    right: 0px;
+    bottom: 0px;
+    /* body 기준으로 옮기기 때문에 ???? 우측 하단에 위치함 */
+}
+
+.parent{
+    height: 200px;
+    width: 100%;
+    background-color: yellow;
+    position: relative;
+    /* 전후, children이 부모의 색 안에서만 놀수 있게 */
+    /* 부모를 기준으로 잡는다. */
+}
+
+.children {
+    background-color: pink ;  
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+}
+
+/*  노란색이 분홍색을 포함한 것처럼 보임. */
+
+.coral {
+    background-color: coral;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}

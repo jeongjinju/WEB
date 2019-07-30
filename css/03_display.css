@@ -1,0 +1,34 @@
+div {
+    background-color: lemonchiffon;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.half {
+    width: 50%;
+}
+
+.b {
+    display: block;
+}
+
+.i {
+    display: inline;
+    /* margin-top: 100;
+     inline에는 margin 값을 줄 수 없다 */
+    
+}
+
+.in-b {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.bg {
+    background-image: url(https://s3.orbi.kr/data/file/united/1846347971_CwzZ6WOn_tumblr_o0n8es12kq1rxye79o1_1280.jpg)
+}
+
+.text {
+    font-family:'Merriweather', serif;
+}

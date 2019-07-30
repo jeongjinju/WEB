@@ -14,18 +14,22 @@
         <!-- 이름: <input type="text">
         마크업이 되어있지 않다. 
         어떤 input인지 설명 -->
+        <div>
         <label for="name">이름 :</label>
         <!-- 라벨과 인풋을 연결.  -->
-        <input id="name" type="text" name="name">
-    
-        <label for="date">날짜:</label>
-        <input id="date" type="date" name="date">
-
+        <input id="name" type="text" name="name" placeholder="이름을 작성하세요">
+        <!-- placeholder= 사용자가 어떤 데이터를 넣을지 써줌, 부연 설명, 미리보기! -->
+        </div>
+        <div>
+            <label for="date">날짜:</label>
+            <input id="date" type="date" name="date">      
+        </div>
+        <!-- div로 묶은건 줄 바꿈을 하기 위함! 그러나 줄 바꾸기 위한 무분벼한 사용은 X -->
         <h3>1. 샌드위치 선택</h3>
         
-        <input id="option1" type="radio" name="main" value="1"> <label for="option1"> 에그마요 </label><br>
-        <input id="option2" type="radio" name="main" value="2"> <label for="option2"> 이탈리안 비엠티 </label><br>
-        <input id="option3" type="radio" name="main" value="3"> <label for="option3"> 터키 </label><br>
+        <input id="option1" type="radio" name="main" value="1"> <label for="option1"> 에그마요 </label>
+        <input id="option2" type="radio" name="main" value="2"> <label for="option2"> 이탈리안 비엠티 </label>
+        <input id="option3" type="radio" name="main" value="3"> <label for="option3"> 터키 </label>
         
         <hr>
         
@@ -37,15 +41,19 @@
 
 
         <h3>2. 사이즈선택</h3>
-        <input type="number" >
-        <br>
+        <input name="size" type="number" value="15" min="15" max="30" step="15">
+        <!-- step 은 간격!-->
+        
+        <!-- 기본값 설정 -->
+        
+
         <hr>
 
         <h3>3. 빵</h3>
-        <select name ="bread">
-           <option value = "허니오트">허니오트</option>
-           <option value = "플랫브래드">플랫브래드</option>
-           <option value = "하티 이탈리안">하티 이탈리안</option>
+        <select name="bread">
+           <option value="1">허니오트</option>
+           <option value="2">플랫브래드</option>
+           <option value="3">하티 이탈리안</option>
         </select>
         <hr>
 
@@ -55,6 +63,17 @@
         <input type="checkbox" id="hala" name="add" value="3"><label for="hala"> 할라피뇨</label><br>
         <input type="checkbox" id="hot" name="add" value="4"><label for="hot"> 핫 칠리</label><br>
         <input type="checkbox" id="barbecue" name="add" value="5"><label for="barbecue"> 바베큐</label><br>
+        
+        <!--선생님 코드
+         <h3>4.야채/소스</h3>
+        <input type="checkbox" id="tomato" name="tomato" value="True"><label for="tomato"> 토마토 </label> <br>
+        <input type="checkbox" id="cucumber" name="cucumber" value="True"> <label for="cucumber">오이 </label><br>
+        <input type="checkbox" id="hala" name="hala" value="True"><label for="hala"> 할라피뇨</label><br>
+        <input type="checkbox" id="hot" name="hot" value="True"><label for="hot"> 핫 칠리</label><br>
+        <input type="checkbox" id="barbecue" name="barbecue" value="True"><label for="barbecue"> 바베큐</label><br>
+        value에 True 값을 넣으면 나중에 조건문에서 사용하기 편리하다.
+        -->
+        
         <br><br><br>
         <input type="submit" >
     </form>

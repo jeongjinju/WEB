@@ -1,0 +1,41 @@
+/* hello {
+    font-size:50px  
+
+} 
+ 이런 식이면 hello 라는 태그를 찾는다. 
+ 이를 위해 이거는 id값이라는 의미로 #을 붙여준다. 
+ # id => 아이디 셀렉터
+ */
+
+#hello {
+    font-size: 50px;
+}
+
+#welcome {
+    font-size: 200%;
+}
+
+#lunch {
+    font-size: 10em;
+}
+
+/*  div 는 부모 */
+div {
+    width: 50%;
+}
+
+/*  h1은 자식,
+부모의 width를 상속받아서 결국은 50% *50% = 25% */
+h1 {
+    width: 50%;
+}
+
+#snack {
+    font-size: 0.5rem;
+}
+
+#menu {
+    width: 50vw;
+    height: 50vh;
+    background-color: aquamarine
+}
