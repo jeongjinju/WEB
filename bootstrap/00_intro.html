@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- bootstrap이 적용해높은 클래스를 사용하겠다 -->
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="mx-auto d-inline" style="width:50%">이제부터 부트스트랩</h1>
+    <h1 class="mx-auto d-inline" style="width:50%">이제부터 부트스트랩</h1>
+    <!-- <h1 class="mx-auto d-none" style="width:50%">이제부터 부트스트랩</h1> -->
+    <!-- margin이 가지고 있는 최대값은 5 (3rem) -->
+    <!-- m-0 / mr-5 / mx-0 : x좌표, 좌우 margin/  py - padding y축
+        mt-1 (1 = 0.25 rem / 브라우저 기본 rem =16px , 1= 4px)  -> 기본 배수형으로 표현되어 있다.
+        음수도 가능한다. my-n0 (negative)    
+        mx-auto : horizen centering 
+    -->
+    <h1 class="d-sm-none">테스트</h1>
+    <!-- sm : small / sm사이즈일때는 none : !반응형! 
+    default : extra samll
+            sm - md - lg - xl
+    -->
+
+    <h1 class="mx-auto bg-success alert-success">테스트2</h1>
+    <h1 class="mx-auto bg-dark alert-warning">테스트</h1>
+    <a href=" https://www.naver.com" class="d-block btn btn-success">네이버</a>
+    <a href=" https://www.naver.com " class="btn btn-success ">네이버</a>
+    <!-- <a href=" https://www.naver.com " class="btn btn-success fixed-top">네이버</a> -->
+    
+    <div class="my-3 border border-danger">구글</div>
+    <!-- <a href="ht?tps://www.google.com"></a> -->
+    <div class="my-3 border border-danger rounded-circle">구글</div>
+    <div class="my-3 border border-danger rounded-pill">구글</div>
+    <div class="my-3 text-center font-weight-bold">구글</div>
+    <div class="my-3 text-center font-italic">구글</div>
+    <!-- 영역은 그대로이고 text만 중앙으로 정렬된다. -->
+    <!-- <div class="my-3 border border-danger rounded-circle"><h1>구글</h1></div> -->
+
+  </div>
+
+
+
+  <!-- 스크립트가 무거워 로딩이 늦어질 수도 있다. -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+/* *은 모든 element, all
+* {
+    color: rebeccapurple;
+} */
+
+
+/* Tag Selector */
+h1 {
+    color: palevioletred !important;
+}
+
+/* !important : 가장 최우선순위 */
+/* 하나의 프로퍼티에 important */
+
+/* 그룹설정 
+콤마를 찍어서 그룹핑 가능 */
+
+h1, h2 {
+    background-color: darkgray
+}
+
+/* 클래스 */
+.class-selector {
+    color: blue;
+}
+
+/* 아이디 */
+#id-selector {
+    color: greenyellow;
+}
+/* id가 중복되었을 때 동작은 하지만 id는 하나만 쓰는게 원칙 */
+
+/* 셀렉터들은 우선순위가 있다. */
+/* h1(tag selector)보다 class-selector의 우선순위가 높다 */
+/* 또한 id-selector가 class-selectro보다 우선순위가 높다 */
+/* id > class > tag */
+
+/* 위치를 가지고 판단 */
+/* 자식 셀렉터, ul의 자식인 li만 찾아서 설정바뀜 */
+ul > li {
+    color: green;
+}
+
+/* p태그의 형제관계 중에 바로 뒤에 인접한 형제. */
+p + li {
+    color: darkred
+}
+
+/* p태그의 형제관계 중에 뒤에 오는 모든 형제. */
+p ~ li {
+    color: skyblue
+}
+
+div > p {
+    color: red;
+}
+
+div p {
+    background-color: darkolivegreen
+}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<div class="container bg-primary">
+  
+  <div class="row">
+    <div class="col">
+      
+    </div>
+    <div class="col-6 width=auto">
+      <img src="https://attach.s.op.gg/logo/20190730135214.bb87673d92d8dff6a5de5c104187e4b4.png" title="카타리나" alt="OP.GG Logo (카타리나) " class="Image mx-auto" style="width:100%">
+
+      <form action="/search">
+        <div class="form-group d-flex justify-content-center" >
+          <label for="summoner"></label>
+          <input type="text" class="form-control d-inline" id="summoner" name="summoner" style="width:70%">
+          <button type="submit" class="btn btn-primary btn-outline-light d-inline">.GG</button>
+          <!-- 실제로 사용자가 입력할 데이터를 name에 넣어주어야한다. 그렇기 위해 name -->
+        </div>  
+      </form>
+    </div>
+    <div class="col">
+     
+    </div>
+  </div>
+</div>
+
+  <!-- 사용자가 정보를 입력하면 해당 정보를 보내기 위함 -->
+  <!-- 입력된 정보를 보내 원하는 정보를 get 하기 위해 2개로 나누어서 실행 -->
+{% endblock %}
