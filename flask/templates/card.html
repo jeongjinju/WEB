@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block body %}
+
+  <div class="row">
+      {%for product in products %}
+      <div class="card mx-4 my-4 mdl-card" style="width: 18rem;">
+        <div class="card-body ">
+          <h6 class="text"> 제품명 </h5>
+          <h4 class="card-title btn btn-warning">{{product[0]}}</h5>
+          <h6 class="text"> 대체상품 </h5>
+          <h4 class="card-text btn btn-info">{{product[2]}}</h4>
+          <h6 class="text"> 카테고리 </h5>
+          <h6 class="card-subtitle mb-2 text-muted ">#{{product[1]}}</h6>
+        </div>
+      </div>
+    
+    {% endfor %}
+  </div> 
+    
+
+
+{% endblock %}
